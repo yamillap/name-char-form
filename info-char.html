@@ -17,7 +17,7 @@
     <div class="problem">
         <div class="form">
             <form>
-                <h3>Problem 1</h3>
+                <h3>Information</h3>
                 <div style="padding: 5px 10px; ">
                     <label>Name</label> 
                     <input type="text" id="name" placeholder="First and last name" required>
@@ -44,24 +44,14 @@
     
     
     <div class="problem">
-        <h3>Problem 2</h3>
+        <h3>Character Count</h3>
         <p id="total" style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Total Count:</p>
         <p id="letters" style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Character Count:</p>
         <textarea id="words" onkeyup="totalCount(); charCount();" style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"></textarea>
 
     </div>
 
-    <div class="problem">
-        <h3>Problem 3</h3>
-        <div class="links">
-            <i id="lock" class="fa-solid fa-lock"></i><p style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif" id="secure"></p>
-            <i id="unlock" class="fa-solid fa-lock-open"></i><p style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif" id="unsecure"></p>
-            <button onClick="renderLink();">Click me!</button>
-        </div>
-    </div>
-    
-        
-        
+   
     <script>
         function isValid() {
 
@@ -101,11 +91,6 @@
 
             document.getElementById('letters').innerHTML = "Character Count: " + noNum.length;
 
-        }
-
-        function renderLink(){
-            document.getElementById('secure').innerHTML = "https://docs.google.com";
-            document.getElementById('unsecure').innerHTML= "http://y8games.com";
         }
 
     </script>
